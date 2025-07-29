@@ -84,8 +84,9 @@ div.books div.bookItem a {
         width: 300px;
     }
 
-    div.books p {
+    div.books div p {
         font-size: .95em;
+        line-height: 65px;
     }
 
 }
