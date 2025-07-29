@@ -65,3 +65,15 @@ div.books div.bookItem a {
     }
 
 }
+
+@media (max-width: 310px) {
+
+    div.books {
+        width: 280px;
+    }
+
+    div.books p {
+        font-size: .85em;
+    }
+
+}
