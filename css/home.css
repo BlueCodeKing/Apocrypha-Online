@@ -60,8 +60,8 @@ div.books div.bookItem a {
         width: 350px;
     }
 
-    div.books p {
-        font-size: 1.1em;
+    div.books div p {
+        font-size: .95em;
     }
 
 }
