@@ -74,16 +74,16 @@ div.books div.bookItem a {
         width: 320px;
     }
 
+    div.books div p {
+        line-height: 40px;
+    }
+
 }
 
 @media (max-width: 325px) {
 
     div.books {
         width: 300px;
-    }
-
-    div.books div p {
-        line-height: 40px;
     }
 
 }
