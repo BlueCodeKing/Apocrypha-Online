@@ -28,6 +28,10 @@ div.books div.bookItem a {
     text-decoration: none;
 }
 
+div.books div.bookItem p {
+    overflow-y: hidden;
+}
+
 @media (max-width: 1000px) {
     
     div.books {
