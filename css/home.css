@@ -54,7 +54,31 @@ div.books div.bookItem a {
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 411px) {
+
+    div.books {
+        width: 350px;
+    }
+
+    div.books p {
+        font-size: 1.1em;
+    }
+
+}
+
+@media (max-width: 370px) {
+
+    div.books {
+        width: 320px;
+    }
+
+    div.books p {
+        font-size: 1em;
+    }
+
+}
+
+@media (max-width: 325px) {
 
     div.books {
         width: 300px;
@@ -62,18 +86,6 @@ div.books div.bookItem a {
 
     div.books p {
         font-size: .95em;
-    }
-
-}
-
-@media (max-width: 310px) {
-
-    div.books {
-        width: 280px;
-    }
-
-    div.books p {
-        font-size: .85em;
     }
 
 }
