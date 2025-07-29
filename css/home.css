@@ -61,7 +61,8 @@ div.books div.bookItem a {
     }
 
     div.books div p {
-        font-size: .7em;
+        font-size: .8em;
+        line-height: 65px;
     }
 
 }
@@ -70,10 +71,6 @@ div.books div.bookItem a {
 
     div.books {
         width: 320px;
-    }
-
-    div.books p {
-        font-size: 1em;
     }
 
 }
@@ -85,7 +82,6 @@ div.books div.bookItem a {
     }
 
     div.books div p {
-        font-size: .95em;
         line-height: 65px;
     }
 
