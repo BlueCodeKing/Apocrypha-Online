@@ -87,3 +87,24 @@ div.books div.bookItem a {
     }
 
 }
+
+/* LARGE SCREENS */
+
+@media (min-width: 1600px) {
+
+    div.books {
+        width: 1510px;
+    }
+
+    div.books div.bookItem {
+        height: 100px;
+        width: 500px;
+    }
+
+    div.books div.bookItem a {
+        font-size: 2em;
+        line-height: 300%;
+
+    }
+
+}
