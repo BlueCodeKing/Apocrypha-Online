@@ -1,0 +1,29 @@
+p.email {
+    text-align: center;
+    margin: 30px auto;
+    width: 60%;
+    font-size: 2em;
+    color: white;
+    padding: 10px 0;
+    border: 3px solid rgb(100, 28, 0);
+    border-radius: 35px;
+    background-color: rgb(255, 28, 0);
+    opacity: .8;
+    transition: .8s;
+    max-width: 500px;
+}
+
+p.email:hover {
+    border-color: white;
+}
+
+div a {
+    color: white;
+    text-decoration: none;
+}
+
+p.text {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}

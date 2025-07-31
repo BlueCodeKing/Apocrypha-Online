@@ -1,0 +1,38 @@
+div.comingSoon {
+    text-align: justify;
+    margin: 30px auto;
+    width: 60%;
+    font-size: 2em;
+    color: white;
+    padding: 10px 0;
+    border: 3px solid rgb(0, 0, 100);
+    border-radius: 15px;
+    background-color: blue;
+    opacity: 0.8;
+}
+
+div.comingSoon p {
+    padding: 20px 40px;
+}
+
+p span {
+    font-weight: bold;
+} 
+
+@media (max-width: 1440px) {
+    div.comingSoon {
+        width: 80%;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 700px) {
+    div.comingSoon {
+        width: 90%;
+        font-size: 1.2em;
+    }
+
+    div.comingSoon p {
+        padding: 10px 20px;
+    }
+}
