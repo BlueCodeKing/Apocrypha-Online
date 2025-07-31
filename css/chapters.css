@@ -109,3 +109,32 @@ div.chapters div.chapterItem a p.gray:hover {
         font-size: 1.6em;
     }
 }
+
+/* LARGE SCREENS */
+
+@media (min-width: 1700px) {
+
+    div.chapters {
+        width: 1235px;
+    }
+
+    div.chapters div.chapterItem a p {
+        font-size: 3em;
+        height: 150px;
+        line-height: 200%;
+    }
+}
+
+@media (min-width: 2000px) {
+
+    div.chapters {
+        width: 1500px;
+    }
+
+    div.chapters div.chapterItem a p {
+        font-size: 4em;
+        height: 180px;
+        line-height: 190%;
+    }
+
+}

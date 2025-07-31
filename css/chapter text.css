@@ -1,0 +1,246 @@
+div.chapterText {
+    background-color: blue;
+    opacity: .7;
+    color: white;
+    width: 60%;
+    margin: 30px auto;
+    border-radius: 15px;
+    border: solid 3px rgb(0, 0, 100);
+}
+
+div.chapterText h1 {
+    text-align: center;
+    font-size: 2.5em;
+    padding: 20px 0 0;
+    margin: 0;
+}
+
+div.chapterText h2 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 0;
+}
+
+div.chapterText h3 {
+    font-size: 2em;
+    padding: 10px 30px;
+    margin: 0;
+}
+
+div.chapterText p {
+    font-size: 1.8em;
+    padding: 10px 30px;
+    text-align: justify;
+}
+
+div.chapterText p:last-child {
+    padding-bottom: 30px;
+}
+
+img.leftArrow {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    width: 100px;
+    height: auto;
+    border: solid 3px rgb(0, 0, 100);
+    border-radius: 10px;
+}
+
+img.rightArrow {
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    width: 100px;
+    height: auto;
+    border: solid 3px rgb(0, 0, 100);
+    border-radius: 10px;
+}
+
+div.bottomMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 60%;
+    margin: 5px auto 30px;
+    gap: 5px;
+}
+
+div.bottomMenu a {
+    text-decoration: none;
+    color: white;
+    background-color: #0000ff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    border: solid 3px rgb(0, 0, 100);
+    opacity: .7;
+    transition: .8s;
+    font-weight: bold;
+}
+
+div.bottomMenu a:hover {
+    border-color: white;
+}
+
+@media (max-width: 1050px) {
+
+    img.leftArrow {
+        left: 40px;
+    }
+
+    img.rightArrow {
+        right: 40px;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    div.chapterText {
+        width: 90%;
+    }
+
+    div.chapterText h1 {
+        font-size: 2em;
+    }
+
+    div.chapterText h2 {
+        font-size: 1.3em;
+    }
+    
+    div.chapterText h3 {
+        font-size: 1.5em;
+    }
+
+    div.chapterText p {
+        font-size: 1.5em;
+    }
+
+    img.leftArrow, img.rightArrow {
+        display: none;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    div.chapterText {
+        width: 95%;
+    }
+
+    div.chapterText h1 {
+        font-size: 1.8em;
+    }
+
+    div.chapterText h2 {
+        font-size: 1.2em;
+    }
+    
+    div.chapterText h3 {
+        font-size: 1.3em;
+    }
+
+    div.chapterText p {
+        font-size: 1.2em;
+        padding: 10px 20px;
+    }
+
+    div.bottomMenu {
+        grid-template-columns: 1fr;
+        width: 95%;
+        grid-auto-flow: reverse;
+    }
+
+    div.bottomMenu a:first-child {
+        order: 2;
+    }
+
+    div.bottomMenu a:last-child {
+        order: -1;
+    }
+
+}
+
+/* LARGE SCREENS */
+
+@media (min-width: 1700px) {
+
+    div.chapterText {
+        width: 70%;
+    }
+
+    div.chapterText h1 {
+        font-size: 5em;
+    }
+
+    div.chapterText h2 {
+        font-size: 2.5em;
+    }
+    
+    div.chapterText h3 {
+        font-size: 2.5em;
+    }
+
+    div.chapterText p {
+        font-size: 2.5em;
+    }
+
+    img.leftArrow { 
+        width: 150px;
+        left: 3%;
+    }
+    
+    img.rightArrow {
+        width: 150px;
+        right: 3%;
+    }
+
+    div.bottomMenu {
+        width: 70%;
+    }
+
+    div.bottomMenu p {
+        font-size: 2.8em;
+        height: 100px;
+        line-height: 100px;
+    }
+}
+
+@media (min-width: 2000px) {
+
+    div.chapterText {
+        width: 75%;
+    }
+
+    div.chapterText h1 {
+        font-size: 6em;
+        margin-top: 40px;
+    }
+
+    div.chapterText h2 {
+        font-size: 3em;
+        margin-bottom: 30px;
+    }
+    
+    div.chapterText h3 {
+        font-size: 4em;
+    }
+
+    div.chapterText p {
+        font-size: 4em;
+        padding: 20px 40px;
+    }
+
+    img.leftArrow { 
+        width: 200px;
+        left: 2%;
+    }
+    
+    img.rightArrow {
+        width: 200px;
+        right: 2%;
+    }
+
+}
