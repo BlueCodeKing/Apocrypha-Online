@@ -20,9 +20,14 @@ main p {
     color: #fff;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 840px) {
+
+    img.PayPal {
+        width: 45%;
+    }
+
     main h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     main p {
@@ -30,10 +35,10 @@ main p {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 625px) {
     
     img.PayPal {
-        width: 70%;
+        width: 55%;
         margin: 20px auto 0;
     }
 
@@ -47,6 +52,32 @@ main p {
         font-size: 1.2em;
         margin-top: 10px;
         padding: 10px 20px;
+    }
+
+}
+
+/* LARGE SCREENS */
+
+@media (min-width: 1000px) {
+      
+    img.PayPal {
+        width: 45%;
+    }
+
+    main h1 {
+        font-size: 3em;
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+    img.PayPal {
+        width: 25%;
+    }
+
+    main p {
+        font-size: 1.8em;
     }
 
 }
