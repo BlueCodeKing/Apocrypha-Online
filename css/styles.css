@@ -1,0 +1,17 @@
+/* CSS RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:"Noto Serif", Lora, serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url(../images/background2.png);
+    background-size: cover;
+}

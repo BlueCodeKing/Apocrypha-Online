@@ -1,0 +1,340 @@
+div.flexMenu {
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+    min-height: calc(100vh - 70px);
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* HOME TEXT */
+
+div.homeText {
+    background-color: blue;
+    border: solid navy 5px;
+    width: 48%;
+    border-radius: 10px;
+    height: 380px;
+    box-sizing: border-box;
+}
+
+div.homeText p {
+    font-size: 1.8em;
+    color: white;
+    padding: 25px;
+}
+
+p.homeTextSmallViewport {
+        display: none;
+    }
+
+/* HOME MENU */
+
+div.homeSideMenu {
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    min-height: 380px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+div.homeSideMenu div {
+    width: 100%;
+    border: solid navy 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+div.homeSideMenu div a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.homeSideMenu div a p {
+    padding: 20px 15px;
+    width: calc(100% - 30px);
+    background-color: blue;
+    border-radius: 5px;
+    transition: .6s;
+}
+
+div.homeSideMenu div a p:hover {
+    background-color: dodgerblue;
+}
+
+/* RESPONSIVE CODE */
+
+@media (max-width: 1350px) {
+
+    p.homeTextSmallViewport {
+        display: block;
+    }
+
+}
+
+/* HEIGHT = 800PX */
+
+@media (min-width: 1601px) and (max-height: 800px) {
+
+    div.flexMenu {
+        width: 1220px;
+    }
+
+    div.flexMenu div.homeText {
+        width: 600px;
+        height: 480px;
+        margin-bottom: 0;
+    }
+
+    div.flexMenu div.homeSideMenu {
+        height: 480px;
+    }
+
+    div.flexMenu div.homeSideMenu div:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 1600px) and (max-height: 800px) {
+
+    div.flexMenu {
+        height: 545px;
+    }
+
+    div.flexMenu div.homeText {
+        height: 545px;
+        box-sizing: border-box;
+    }
+
+    div.flexMenu div.homeSideMenu {
+        height: 545px;
+    }
+
+    div.flexMenu div.homeSideMenu div {
+        margin-bottom: 24px;
+        box-sizing: border-box;
+    }
+
+    div.flexMenu div.homeSideMenu div:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 1400px) and (max-height: 800px) {
+
+    div.flexMenu {
+        width: 1100px;
+        height: 525px;
+    }
+
+    div.flexMenu div.homeText {
+        height: 525px;
+        margin-bottom: 0;
+        box-sizing: border-box;
+    }
+
+    div.flexMenu div.homeSideMenu {
+        height: 525px;
+        margin-bottom: 0;
+    }
+
+    div.flexMenu div.homeSideMenu div {
+        margin-bottom: 6px;
+    }
+
+    div.flexMenu div.homeSideMenu div:last-child {
+        margin-bottom: 0;
+    }
+
+    div.flexMenu div.homeSideMenu div a {
+        font-size: 2.3em;
+    }
+
+}
+
+@media (max-width: 1160px) and (max-height: 800px) {
+
+    div.flexMenu {
+        width: 870px;
+    }
+
+    div.flexMenu div.homeSideMenu div a p {
+        font-size: .8em;
+        padding: 25px 15px;
+    }
+
+}
+
+@media (max-width: 956px) and (max-height: 800px) {
+
+    div.flexMenu {
+        display: block;
+        width: 600px;
+        margin-top: 40px;
+        height: fit-content;  
+    }
+
+    div.flexMenu div.homeText {
+        width: 100%;
+        height: fit-content;
+    }
+
+    div.flexMenu div.homeSideMenu {
+        display: block;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+}
+
+@media (max-width: 655px) and (max-height: 800px) {
+
+    div.flexMenu {
+        width: 480px;
+    }
+
+    div.flexMenu div.homeSideMenu {
+        width: 480px;
+    }
+
+}
+
+@media (max-width: 550px) and (max-height: 800px) {
+
+    div.flexMenu {
+        width: 80%;
+    }
+
+    div.flexMenu div.homeText {
+        width: 100%;
+    }
+
+    div.flexMenu div.homeText {
+        font-size: .9em;
+    }
+
+    div.flexMenu div.homeSideMenu {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 500px) and (max-height: 800px) {
+
+    div.flexMenu {
+        width: 95%;
+    }
+
+    div.flexMenu div.homeSideMenu {
+        font-size: .82em;
+    }
+
+}
+
+@media (max-width: 450px) and (max-height: 800px) {
+
+    div.flexMenu div.homeText {
+        font-size: .7em;
+    }
+
+}
+
+@media (max-width: 350px) and (max-height: 800px) {
+
+    div.flexMenu div.homeSideMenu {
+        font-size: .6em;
+    }
+
+}
+
+/* HEIGHT = 600px */
+
+@media (max-width: 1600px) and (max-height: 600px) {
+
+    div.flexMenu {
+        height: fit-content;
+    }
+
+    div.flexMenu div.homeText {
+        height: 460px;
+    }
+
+    div.flexMenu div.homeSideMenu {
+        height: 460px;
+    }
+
+    div.flexMenu div.homeSideMenu div {
+        height: 84px;
+        margin-bottom: 10.4px;
+    }
+
+    div.flexMenu div.homeSideMenu div:last-child {
+        margin-bottom: 0;
+    }
+
+    div.flexMenu div.homeSideMenu div a p {
+        height: 34px;
+        line-height: 35px;
+    }
+
+}
+
+@media (max-width: 1350px) and (max-height: 600px) {
+
+    div.flexMenu div.homeText span.text1 {
+        display: none;
+    }
+
+    div.flexMenu div.homeText span.text2 {
+        display: inline;
+    }
+
+}
+
+@media (max-width: 1160px) and (max-height: 600px) {
+
+    div.flexMenu div.homeText {
+        font-size: 14px;
+    }
+
+    div.flexMenu div.homeSideMenu div a p {
+        height: 25px;
+        line-height: 25px;
+    }
+
+}
+
+@media (max-width: 956px) and (max-height: 600px) {
+
+    div.flexMenu div.homeText span.text1 {
+        display: inline;
+    }
+
+    div.flexMenu div.homeText span.text2 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 392px) and (max-height: 600px) {
+
+    div.flexMenu div.homeText {
+        font-size: .81em;
+    }
+}
+
+@media (max-width: 343px) and (max-height: 600px) {
+
+    div.flexMenu div.homeText {
+        font-size: .73em;
+    }
+
+}

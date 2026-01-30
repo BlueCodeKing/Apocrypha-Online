@@ -1,0 +1,171 @@
+header {
+    background-image: linear-gradient(dodgerblue, blue);
+    height: 70px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-bottom: solid white 4px;
+}
+
+/* SITE LOGO */
+
+header h1 {
+    line-height: 70px;
+    margin-left: 25px;
+    display: inline-block;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+    transition: .6s;
+}
+
+/* INPUT */
+
+header input {
+    display: none;
+}
+
+/* HAMBURGER MENU */
+
+header div.hamburgerMenu {
+    display: none;
+    width: 40px;
+    float: right;
+    margin: 15px 20px 0 0;
+    cursor: pointer;
+}
+
+header div.hamburgerMenu div {
+    margin: 6px 1px;
+    background-color: white;
+    height: 5px;
+    width: 38px;
+    border-radius: 2px;
+}
+
+/* TOP MENU */
+
+header div.slidingMenu {
+    max-width: 900px;
+    width: 100%;
+    float: right;
+}
+
+header div.slidingMenu ul {
+    float: right;
+    margin-right: 5px;
+    height: 60px;
+    margin-top: 5px;
+    overflow-y: hidden;
+    transition: .6s;
+}
+
+header div.slidingMenu ul li {
+    display: inline-block;
+    margin-right: 15px;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+header div.slidingMenu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    transition: .6s;
+}
+
+header div.slidingMenu ul li a:hover, header ul li a.active {
+    background-color: navy;
+}
+
+@media (max-width: 1350px) {
+
+    header div.slidingMenu {
+        position: fixed;
+        z-index: 100;
+        background: black;
+        height: 100vh;
+        padding: 10px;
+        margin: 0;
+        top: 0;
+        right: 0;
+        width: 250px;
+        transform: translateX(100%);
+        transition: transform .3s ease;
+        will-change: transform;
+    }
+
+    input#check:checked ~ div.slidingMenu {
+        transform: translateX(0);
+    }
+
+    header div.slidingMenu label div.closeMenu {
+        height: 50px;
+        width: 50px;
+        float: right;
+    }
+
+    input#check:checked ~ header div.slidingMenu label div.closeMenu {
+        right: -250px;
+        display: block;
+    }
+
+    header div.slidingMenu label div.closeMenu div {
+        width: 42px;
+        background-color: white;
+        height: 5px;
+        border-radius: 2px; 
+    }
+
+    header div.slidingMenu label div.closeMenu div:first-child {
+        transform: rotate(45deg) translateY(15px) translateX(20px);
+
+    }
+
+    header div.slidingMenu label div.closeMenu div:last-child {
+        transform: rotate(-45deg) translateY(17px) translateX(-10.5px);
+    }
+
+    header div.slidingMenu ul {
+        height: auto;
+        margin-right: 0;
+        width: 250px;
+        float: unset;
+        display: block;
+    }
+
+    header div.slidingMenu ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 4vh;
+        margin-right: 0;
+    }
+
+    input#check:checked ~ ul {
+        right: 0;
+    }
+
+    header div.hamburgerMenu {
+        display: inline-block;
+    }
+
+}
+
+@media (max-width: 460px) {
+    h1 a span.title1 {
+        position: relative;
+        top: -16px;
+        font-size: 25px;
+        left: -10px;
+    }
+
+    h1 a span.title2 {
+        position: relative;
+        top: 10px;
+        font-size: 25px;
+        left: -158px;
+    }
+}
