@@ -1,0 +1,136 @@
+div.bookButtons {
+    display: grid;
+    width: 870px;
+    margin: 30px auto;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+div.bookButtons div {
+    border-radius: 15px;
+}
+
+div.bookButtons div a {
+    color: white;
+    text-decoration: none;
+}
+
+div.bookButtons div a p {
+    background-color: rgba(0, 0, 255, .8);
+    font-size: 35px;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 85px;
+    border: solid 8px navy;
+    transition: .6s;
+}
+
+div.bookButtons div a p:hover {
+    background: dodgerblue;
+    border-color: blue;
+}
+
+div.bookButtons div:first-child {
+    grid-column: 1 / span 4;
+}
+
+div.bookButtons div:nth-child(2) {
+    grid-column: 5 / span 4;
+}
+
+@media (max-width: 975px) {
+
+    div.bookButtons div:first-child {
+        grid-column: 1 / span 3;
+    }
+
+    div.bookButtons div:nth-child(2) {
+        grid-column: 4 / span 3;
+    }
+
+    div.bookButtons {
+        width: 650px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    div.bookButtons div:first-child {
+        grid-column: 1 / span 4;
+    }
+
+    div.bookButtons div:nth-child(2) {
+        grid-column: 1 / span 4;
+    }
+
+    div.bookButtons {
+        width: 430px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 460px) {
+
+    div.bookButtons {
+        width: 327.5px;
+        gap: 5px;
+    }
+
+    div.bookButtons div a p {
+        width: 80px;
+        height: 80px;
+        line-height: 74px;
+        border-width: 4px;
+        font-size: 30px;
+    }
+
+    div.bookButtons div a p.long {
+        width: 100%;
+    }
+
+    div.bookButtons div a p:first-child {
+        grid-column: 1 / span 4;
+    }
+
+    div.bookButtons div a p:nth-child(2) {
+        grid-column: 1 / span 4;
+    }
+
+}
+
+@media (max-width: 340px) {
+
+    div.bookButtons {
+        width: 310px;
+        gap: 3px;
+    }
+
+    div.bookButtons div a {
+        width: 75px;
+    }
+
+    div.bookButtons div a p {
+        width: 75px;
+        height: 75px;
+        line-height: 70px;
+        border-width: 4px;
+        font-size: 30px;
+    }
+
+    div.bookButtons div a p.long {
+        width: 100%;
+    }
+
+    div.bookButtons div a p:first-child {
+        grid-column: 1 / span 4;
+    }
+
+    div.bookButtons div a p:nth-child(2) {
+        grid-column: 1 / span 4;
+    }
+
+}

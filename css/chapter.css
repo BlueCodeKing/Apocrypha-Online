@@ -1,0 +1,278 @@
+div.openingBox {
+    background-color: rgba(0, 0, 255, .8);
+    margin: 40px auto 0;
+    width: 95%;
+    border-radius: 15px;
+    border: solid 8px navy;
+}
+
+div.openingBox h1 {
+    text-align: center;
+    color: white;
+    background-color: navy;
+    padding: 15px 0;
+}
+
+div.openingBox h2 {
+    text-align: center;
+    background-color: navy;
+    padding: 0 0 15px;
+}
+
+div.openingBox h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+div.openingBox p {
+    color: white;
+    font-size: 25px;
+    margin: 15px 20px;
+}
+
+div.libraryButton {
+    background-color: rgba(0, 0, 255, .8);
+    margin: 10px auto 0;
+    width: 95%;
+    border-radius: 15px;
+    border: solid 8px navy;
+    transition: .6s;
+}
+
+div.libraryButton:hover {
+    background-color: dodgerblue;
+    border-color: white;
+}
+
+div.libraryButton a {
+    text-decoration: none;
+}
+
+div.libraryButton a h2 {
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+
+div.commentary {
+    background-color: rgba(0, 0, 255, .8);
+    border: solid 8px navy;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+div.commentary p.noCommentary {
+    font-style: italic;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    padding: 400px auto;
+}
+
+div.sideButtons div a {
+    color: white;
+    text-decoration: none;
+}
+
+div.sideButtons div a p {
+    width: 50px;
+    height: 80px;
+    background-color: blue;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.2em;
+    border: solid navy 4px;
+    line-height: 74px;
+    border-radius: 10px;
+}
+
+div.sideButtons div:first-child {
+    position: fixed;
+    top: 45vh;
+    left: 5vw;
+}
+
+div.sideButtons div:last-child {
+    position: fixed;
+    top: 45vh;
+    right: 5vw
+}
+
+div.sideButtons div a p span.bottomButton {
+    display: none;
+}
+
+/* Abnormal Media Quaries */
+
+@media (max-width: 1350px) {
+
+    div.openingBox p.thinScreen {
+        display: block;
+    }
+
+    div.openingBox p.wideScreen {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1350px) {
+
+    div.openingBox p.thinScreen {
+        display: none;
+    }
+
+    div.openingBox p.wideScreen {
+        display: block;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    div.openingBox {
+        width: 75%;
+    }
+    
+    div.commentary {
+        width: 75%;
+    }
+
+    div.commentary p.noCommentary {
+        padding: 40px 20px;
+    }
+
+}
+
+@media (max-width: 760px) {
+
+    div.sideButtons div:first-child {
+        position: fixed;
+        top: 45vh;
+        left: 2.4vw;
+    }
+
+    div.sideButtons div:last-child {
+        position: fixed;
+        top: 45vh;
+        right: 2.4vw;
+    }
+
+}
+
+/* Small Media Quaries */
+
+@media (max-width: 570px) {
+
+    div.openingBox, div.libraryButton {
+        width: 95%;
+    }
+
+    div.sideButtons div a p span.bottomButton {
+        display: inline-block;
+    }
+
+    div.sideButtons div {
+        top: unset;
+        bottom: 0;
+        height: 60px;
+        background-color: black;
+        border-top: solid white 4px;
+        width: 50%;
+        display: inline-block;
+    }
+
+    div.sideButtons div a p {
+        background-color: black;
+        border-color: white;
+        border-radius: 0;
+        color: white;
+        text-align: center;
+        border: none;
+        width: 100%;
+        display: inline-block;
+        line-height: 55px;
+    }
+
+    div.sideButtons div:first-child {
+        top: unset;
+        left: 0;
+        bottom: 0;
+        border-right: solid 4px white;
+    }
+
+    div.sideButtons div:last-child {
+        top: unset;
+        right: 0;
+        bottom: 0;
+        border-left: solid 4px white;
+    }
+
+    div.commentary {
+        width: 95%;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (max-width: 445px) {
+
+    div.commentary p.noCommentary {
+        font-size: 1.7em;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    div.openingBox h1 {
+        font-size: 26px;
+    }
+
+    div.openingBox h2 {
+        font-size: 18px;
+    }
+
+    div.openingBox p {
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    div.openingBox p {
+        font-size: 20px;
+    }
+
+    div.libraryButton h2 {
+        font-size: 1.3em;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    div.openingBox {
+        width: 70%;
+    }
+
+    div.openingBox h1 {
+        font-size: 3em;
+    }
+
+    div.openingBox p {
+        font-size: 2.5em;
+        margin: 45px;
+    }
+
+    div.libraryButton {
+        width: 70%;
+    }
+
+    div.libraryButton h2 {
+        font-size: 2.8em;
+    }
+
+}

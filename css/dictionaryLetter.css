@@ -1,0 +1,187 @@
+div.definitions {
+    color: white;
+    background: blue;
+    width: 60%;
+    border: solid 4px navy;
+    margin: 30px auto;
+    border-radius: 15px;
+}
+
+div.definitions h1 {
+    color: white;
+    font-size: 3.5em;
+    text-align: center;
+    background-color: navy;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+div.definitions dl {
+    color: white;
+    font-size: 2.2em;
+}
+
+div.definitions dt {
+    margin-left: 20px;
+    font-weight: bold;
+    padding: 5px 15px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: navy;
+}
+
+div.definitions dd {
+    margin: 15px 20px 20px 30px;
+    font-size: 0.8em;
+}
+
+div.definitions div a {
+    color: white;
+}
+
+div.sideButtons div a {
+    color: white;
+    text-decoration: none;
+}
+
+div.sideButtons div a p {
+    width: 50px;
+    height: 80px;
+    background-color: blue;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.2em;
+    border: solid navy 4px;
+    line-height: 74px;
+    border-radius: 10px;
+}
+
+div.sideButtons div:first-child {
+    position: fixed;
+    top: 45vh;
+    left: 15vw;
+}
+
+div.sideButtons div:last-child {
+    position: fixed;
+    top: 45vh;
+    right: 15vw
+}
+
+div.sideButtons div a p span.bottomButton {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+
+    div.definitions {
+        width: 80%;
+    }
+
+    div.sideButtons div:first-child {
+        left: 3vw;
+    }
+
+    div.sideButtons div:last-child {
+        right: 3vw;
+    }
+}
+
+@media (max-width: 768px) {
+
+    div.definitions {
+        width: 95%;
+    }
+
+    div.definitions h1 {
+        font-size: 2em;
+        padding: 10px;
+    }
+
+    div.definitions dl dt {
+        font-size: .8em;
+        margin-left: 12px;
+    }
+
+    div.definitions dl dd {
+        font-size: .6em;
+        margin-left: 25px;
+    }
+
+    div.sideButtons div a p span.bottomButton {
+        display: inline-block;
+    }
+
+    div.sideButtons div {
+        top: unset;
+        bottom: 0;
+        height: 60px;
+        background-color: black;
+        border-top: solid white 4px;
+        width: 50%;
+        display: inline-block;
+    }
+
+    div.sideButtons div a p {
+        background-color: black;
+        border-color: white;
+        border-radius: 0;
+        color: white;
+        text-align: center;
+        border: none;
+        width: 100%;
+        display: inline-block;
+        line-height: 55px;
+    }
+
+    div.sideButtons div:first-child {
+        top: unset;
+        left: 0;
+        bottom: 0;
+        border-right: solid 4px white;
+    }
+
+    div.sideButtons div:last-child {
+        top: unset;
+        right: 0;
+        bottom: 0;
+        border-left: solid 4px white;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    div.sideButtons div {
+        height: 50px;
+    }
+
+    div.sideButtons div a p {
+        font-size: 1.5em;
+        line-height: 46px;
+    }
+
+}
+
+@media (max-width: 330px) {
+
+    div.definitions {
+        width: 98%;
+    }
+
+    div.definitions h1 {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    div.definitions dl dt {
+        font-size: .6em;
+        margin-left: 12px;
+    }
+
+    div.definitions dl dd {
+        font-size: .45em;
+        margin-left: 25px;
+    }
+
+}
