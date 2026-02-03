@@ -27,8 +27,12 @@ div.textSection div {
     transition: .6s;
 }
 
-div.textSection div:last-child, div.textSection div a p:last-child {
+div.textSection div:last-child {
     border-radius: 0 0 20px 20px;
+}
+
+div.textSection div:last-child a[href="#"] p {
+    border-radius: 0 0 15px 15px;
 }
 
 div.textSection div:hover {

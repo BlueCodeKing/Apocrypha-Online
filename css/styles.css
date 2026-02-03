@@ -18,6 +18,10 @@ body {
     background-attachment: fixed;
 }
 
+div.bookButtons div a {
+    border-radius: 0;
+}
+
 div.bookButtons div a[href="#"] p {
     background-color: gray;
     border-color: lightgray;
@@ -27,4 +31,19 @@ div.bookButtons div a[href="#"] p {
 div.bookButtons div a[href="#"] p:hover {
     background-color: red;
     border-color: darkred;
+}
+
+div.textContainer div a[href="#"] p {
+    background-color: gray;
+    border-color: lightgray;
+    transition: .6s;
+}
+
+div.textContainer div a[href="#"] p:hover {
+    background-color: red;
+    border-color: darkred;
+}
+
+header div.slidingMenu ul li:nth-child(4), header div.slidingMenu ul li:nth-child(5), header div.slidingMenu ul li:nth-child(6) {
+    display: none;
 }

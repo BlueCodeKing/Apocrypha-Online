@@ -2,3 +2,9 @@ footer {
     background-color: black;
     border-top: solid white 4px;
 }
+
+footer p.copyright {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
