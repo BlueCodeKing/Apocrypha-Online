@@ -85,6 +85,12 @@ div.sideButtons div a p {
     border: solid navy 4px;
     line-height: 74px;
     border-radius: 10px;
+    transition: 0.6s;
+}
+
+div.sideButtons div a p:hover {
+    background-color: dodgerblue;
+    border-color: blue;
 }
 
 div.sideButtons div:first-child {
