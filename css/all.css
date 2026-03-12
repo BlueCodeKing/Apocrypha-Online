@@ -19,14 +19,16 @@ main div.backgroundAll {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100svh;
     width: 100%;
     z-index: -1;
     background: #777777 url(../images/bg.png) center/cover no-repeat;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
 
-    
+    main {
+        height: 100vh;
+    }
 
 }
