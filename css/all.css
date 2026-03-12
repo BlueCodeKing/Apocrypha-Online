@@ -12,7 +12,7 @@ html {
 }
 
 main div.backgroundAll {
-    min-height: 101vh;
+    min-height: 120vh;
     width: 101vw;
     z-index: -1;
     background-image: url(../images/bg.png);
