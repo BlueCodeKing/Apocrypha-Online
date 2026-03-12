@@ -19,7 +19,7 @@ main {
 
 @media (max-width: 425px) {
 
-    html {
+    body {
         background-image: url(../images/bg\ mobile.png);
         background-position: fixed;
         background-size: cover;
