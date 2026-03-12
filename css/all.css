@@ -15,7 +15,7 @@ html {
 }
 
 main {
-    min-height: 100dvh;
+    min-height: 120dvh;
 }
 
 @media (max-width: 425px) {
