@@ -1,0 +1,77 @@
+div.books {
+    background-color: navy;
+    width: 900px;
+    margin: 30px auto;
+    border-radius: 10px;
+    border: solid 5px navy;
+}
+
+div.books h1 {
+    color: white;
+    padding: 20px 0 25px;
+    text-align: center;
+    font-size: 45px;
+}
+
+div.books h2 {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+div.books div {
+    background-color: blue;
+    border-bottom: solid 5px navy;
+    transition: background-color .6s;
+}
+
+div.books div:hover {
+    background-color: dodgerblue;
+}
+
+div.books div:last-child {
+    border-bottom: none;
+}
+
+div.books div a {
+    color: white;
+    text-decoration: none;
+}
+
+div.books div a p {
+    padding: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 940px) {
+
+    div.books {
+        width: 95%;
+    }
+
+    div.books h1 {
+        font-size: 30px;
+    }
+
+    div.books div a p {
+        font-size: 28px;
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    div.books {
+        width: 92%;
+    }
+
+    div.books h1 {
+        font-size: 30px;
+        padding: 10px 0 15px;
+    }
+
+}

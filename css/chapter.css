@@ -1,0 +1,230 @@
+div.chapter {
+    width: 800px;
+    margin: 30px auto;
+    background-color: blue;
+    border-radius: 10px;
+    border: solid 5px navy;
+    box-sizing: border-box;
+}
+
+div.chapter h1 {
+    background-color: navy;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+div.chapter h1 a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.chapter h2 {
+    background-color: navy;
+    text-align: center;
+    padding: 0 10px 20px;
+}
+
+div.chapter h2 a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.chapter p {
+    color: white;
+    font-size: 24px;
+    padding: 15px 17px;
+}
+
+div.chapterButtons div:first-child {
+    background-color: blue;
+    border: solid 5px navy;
+    font-size: 50px;
+    font-weight: bold;
+    width: 56px;
+    height: 90px;
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    top: 45vh;
+    left: 12vw;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+div.chapterButtons div:first-child:hover, div.chapterButtons div:last-child:hover {
+    background-color: dodgerblue;
+}
+
+div.chapterButtons div:first-child a, div.chapterButtons div:last-child a {
+    color: white;
+    text-decoration: none;
+}
+
+div.chapterButtons div:last-child {
+    background-color: blue;
+    border: solid 5px navy;
+    font-size: 50px;
+    font-weight: bold;
+    width: 56px;
+    height: 90px;
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    top: 45vh;
+    right: 12vw;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+div.chapterButtons div span.textHidder {
+    display: none;
+}
+
+div.dictionary {
+    width: 800px;
+    border: solid 5px navy;
+    margin: 10px auto 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+div.dictionary h1 {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+div.dictionary dl {
+    margin: 0 25px 15px;
+}
+
+div.dictionary dl dt {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 22px;
+}
+
+div.dictionary dl dd {
+    color: white;
+    font-size: 23px;
+    margin: 8px 0 0 10px;
+    font-weight: 700;
+}
+
+@media (max-width: 1285px) {
+
+    div.chapterButtons div:last-child {
+        right: 6vw;
+        width: 56px;
+    }
+
+    div.chapterButtons div:first-child {
+        left: 6vw;
+        width: 56px;
+    }
+
+}
+
+@media (max-width: 1090px) {
+
+    div.chapter {
+        width: 80%;
+    }
+
+    div.chapterButtons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 30px auto;
+        width: 80%;
+        gap: 15px;
+    }
+
+    div.chapterButtons div:first-child {
+        width: 100%;
+        padding: 10px 0;
+        position: static;
+        box-sizing: border-box;
+    }
+
+    div.chapterButtons div:last-child {
+        position: static;
+        width: 100%;
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+
+    div.chapterButtons div a p {
+        text-align: center;
+    }
+
+    div.chapterButtons div span.textHidder {
+        display: inline;
+    }
+
+    div.dictionary {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 726px) {
+
+    div.chapter {
+        width: 95%;
+    }
+
+    div.chapterButtons {
+        width: 95%;
+        gap: 5px;
+    }
+
+    div.chapterButtons div:first-child {
+        font-size: 32px;
+    }
+
+    div.chapterButtons div:last-child {
+        font-size: 32px;
+    }
+
+    div.dictionary {
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 570px) {
+
+    div.dictionary dl {
+        margin: 0 20px 10px;
+    }
+
+    div.dictionary dl dt {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    div.dictionary dl dt:first-child {
+        margin-top: 5px;
+    }
+
+    div.dictionary dl {
+        margin: 10px;
+    }
+
+    div.dictionary dl dt {
+        font-size: 25px;
+    }
+
+    div.dictionary dl dd {
+        font-size: 20px;
+    }
+
+}

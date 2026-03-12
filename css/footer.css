@@ -1,0 +1,59 @@
+footer {
+    background-color: black;
+    border-top: solid white 5px;
+}
+
+footer div.footerDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px;
+}
+
+footer div.footerDiv div p {
+    text-align: center;
+    font-size: 25px;
+}
+
+footer div.footerDiv div p a {
+    color: white;
+    text-decoration: none;
+    transition: color .6s;
+}
+
+footer div.footerDiv div p a:hover {
+    color: dodgerblue;
+}
+
+footer p.copyRight {
+    color: white;
+    text-align: center;
+    margin: 30px;
+}
+
+@media (max-width: 591px) {
+
+    footer div.footerDiv {
+        grid-template-columns: 1fr;
+        width: fit-content;
+        margin: 30px auto 0;
+    }
+
+    footer div.footerDiv div {
+        border-bottom: solid 5px gray;
+        padding: 10px;
+        width: 300px;
+    }
+
+    footer div.footerDiv div:first-child {
+        border-top: solid 5px gray;
+    }
+
+}
+
+@media (max-width: 340px) {
+
+    footer div.footerDiv div {
+        width: 260px;
+    }
+
+}

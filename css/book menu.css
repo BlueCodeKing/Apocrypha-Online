@@ -1,0 +1,67 @@
+div.navMenu {
+    display: grid;
+    width: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 30px auto;
+    gap: 5px;
+}
+
+div.navMenu div {
+    background-color: blue;
+    border: solid 5px navy;
+    border-radius: 5px;
+    transition: background-color .6s;
+}
+
+div.navMenu div:hover {
+    background-color: dodgerblue;
+}
+
+div.navMenu div:first-child, div.navMenu div:nth-child(2) {
+    grid-column: span 2;
+}
+
+div.navMenu div a {
+    color: white;
+    text-decoration: none;
+}
+
+div.navMenu div a p {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+
+@media (max-width: 850px) {
+
+    div.navMenu {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    div.navMenu div:first-child, div.navMenu div:nth-child(2) {
+        grid-column: span 1;
+    }
+
+    div.navMenu div a p {
+        padding: 15px 5px;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    div.navMenu {
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    div.navMenu div a p {
+        font-size: 24px;
+    }
+
+}
