@@ -9,11 +9,10 @@
 
 html {
     background-repeat: repeat;
-    padding-top: 70px;
 }
 
 main {
-    height: calc(100vh - 70px);
+    min-height: calc(100dvh - 70px);
 }
 
 main div.backgroundAll {
