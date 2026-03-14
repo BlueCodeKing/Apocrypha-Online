@@ -11,8 +11,12 @@ html {
     background-repeat: repeat;
 }
 
-main {
+body {
     min-height: calc(100dvh - 70px);
+}
+
+main {
+    min-height: calc(100vh - 70px);
 }
 
 main div.backgroundAll {
