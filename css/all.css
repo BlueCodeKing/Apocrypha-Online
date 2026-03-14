@@ -23,7 +23,7 @@ main div.backgroundAll {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100svh;
+    height: 100dvh;
     width: 100%;
     z-index: -1;
     background: #777777 url(../images/bg.png) center/cover no-repeat;
@@ -32,7 +32,7 @@ main div.backgroundAll {
 @media (max-width: 426px) {
 
     main {
-        height: 100vh;
+        min-height: calc(100vh + 70px);
     }
 
 }
