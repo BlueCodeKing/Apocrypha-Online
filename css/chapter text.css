@@ -1,0 +1,207 @@
+main div.chapterPage {
+    width: 800px;
+    margin: 30px auto;
+    background-color: blue;
+    border: solid 5px navy;
+    border-radius: 15px;
+}
+
+main div.chapterPage h1 {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+main div.chapterPage a:hover {
+    color: navy;
+}
+
+main div.chapterPage h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+main div.chapterPage a {
+    color: white;
+    text-decoration: none;
+    transition: color .6s;
+}
+
+main div.chapterPage hr {
+    color: white;
+    margin: 20px;
+}
+
+main div.chapterPage p {
+    color: white;
+    font-size: 25px;
+    margin: 20px;
+}
+
+main div.commentary {
+    background-color: blue;
+    width: 800px;
+    border-radius: 15px;
+    border: solid navy 4px;
+    margin: 10px auto 30px;
+}
+
+main div.commentary h1 {
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+    font-family: serif;
+    font-style: italic;
+    font-size: 40px;
+}
+
+main div.bottomMenu div {
+    background-color: blue;
+    border: solid navy 4px;
+    border-radius: 5px;
+    transition: background-color .6s;
+}
+
+main div.bottomMenu div:hover {
+    background-color: dodgerblue;
+}
+
+main div.bottomMenu div:first-child {
+    position: fixed;
+    top: 45vh;
+    left: 10vw;
+}
+
+main div.bottomMenu div:last-child {
+    position: fixed;
+    top: 45vh;
+    right: 10vw;
+}
+
+main div.bottomMenu div a {
+    color: white;
+    text-decoration: none;
+}
+
+main div.bottomMenu div a p {
+    width: 60px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+main span.words {
+    display: none;
+}
+
+@media (max-width: 1210px) {
+
+    main div.bottomMenu div:first-child {
+        left: 4vw;
+    }
+
+    main div.bottomMenu div:last-child {
+        right: 4vw;
+    }
+
+}
+
+@media (max-width: 1050px) {
+
+    main div.bottomMenu {
+        position: fixed;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        bottom: 0;
+        background-color: navy;
+    }
+
+    main div.bottomMenu div:first-child {
+        position: static;
+    }
+
+    main div.bottomMenu div a p {
+        text-align: center;
+        width: 100%;
+    }
+
+    main span.words {
+        display: inline;
+    }
+
+    main div.bottomMenu div:last-child {
+        position: static;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    main div.chapterPage h1 {
+        font-size: 40px;
+    }
+
+    main div.chapterPage h2 {
+        font-size: 25px;
+    }
+
+    main div.chapterPage {
+        width: 95%;
+    }
+
+    main div.commentary {
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    main div.chapterPage h1 {
+        font-size: 25px;
+    }
+
+    main div.chapterPage h2 {
+        font-size: 20px;
+    }
+
+    main div.chapterPage p {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 401px) {
+
+    main div.commentary h1 {
+        font-size: 30px;
+    }
+
+    main div.bottomMenu div {
+        height: 60px;
+    }
+
+    main div.bottomMenu div a p {
+        font-size: 32px;
+        line-height: 60px;
+        height: initial;
+    }
+
+}
+
+@media (max-width: 330px) {
+
+    main div.chapterPage {
+        width: 92%
+    }
+
+    main div.commentary {
+        width: 92%;
+    }
+
+}

@@ -1,0 +1,57 @@
+main div.bookShelf {
+    width: 800px;
+    background-color: navy;
+    margin: 30px auto;
+    border: solid navy 5px;
+    border-radius: 20px;
+}
+
+main div.bookShelf h1 {
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 35px;
+}
+
+main div.bookShelf div {
+    border-bottom: solid navy 5px;
+    transition: .6s;
+}
+
+main div.bookShelf div:last-child {
+    border-bottom: none;
+}
+
+main div.bookShelf div a {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main div.bookShelf div a p {
+    background-color: blue;
+    padding: 15px;
+    transition: .6s;
+}
+
+main div.bookShelf div:hover a p {
+    background-color: dodgerblue;
+}
+
+@media (max-width: 850px) {
+
+    main div.bookShelf {
+        width: 90%;
+    }
+
+    main div.bookShelf div a {
+        font-size: 25px;
+    }
+
+    main div.bookShelf div a p {
+        padding: 12px;
+    }
+
+}

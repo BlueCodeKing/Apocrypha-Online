@@ -1,0 +1,144 @@
+/* HEADER */
+
+header {
+    background-image: linear-gradient(dodgerblue, blue);
+    height: 70px;
+    overflow-y: hidden;
+    border-bottom: solid 4px white;
+}
+
+/* LOGO */
+
+header h1 {
+    margin: 0 5px 0 15px;
+    height: 70px;
+    font-size: 35px;
+    line-height: 66px;
+    width: fit-content;
+    display: inline-block;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+    transition: color .6s;
+}
+
+header h1 a:hover {
+    color: navy;
+}
+
+/* INPUT */
+
+header input {
+    display: none;
+}
+
+/* NAV */
+
+header label div.menuBtn {
+    display: inline-flex;
+    margin: 20px 20px 0;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 40px;
+    height: 30px;
+    float: right;
+    cursor: pointer;
+}
+
+header label div.menuBtn div {
+    background-color: white;
+    height: 6px;
+    width: 35px;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* MENU */
+
+header input:checked ~ nav {
+    right: 0;
+}
+
+header nav {
+    position: fixed;
+    top: 0;
+    right: -304px;
+    background-color: black;
+    width: 300px;
+    height: 100vh;
+    transition: right .6s;
+    border-left: solid 4px white;
+    z-index: 1000;
+}
+
+header nav div.closeBtn {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin: 20px 20px 0 0;
+    cursor: pointer;
+}
+
+header nav div.closeBtn div {
+    background-color: white;
+    height: 6px;
+    border-radius: 2px;
+}
+
+header nav div.closeBtn div:first-child {
+    transform: rotate(45deg) translate(10px, 8.6px);
+}
+
+header nav div.closeBtn div:last-child {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+header nav ul {
+    height: calc(100vh - 140px);
+    margin-top: 70px;
+}
+
+header nav ul li {
+    text-align: center;
+    font-size: 30px;
+    margin: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    transition: color .6s;
+}
+
+header nav ul li a:hover {
+    color: dodgerblue;
+    width: fit-content;
+}
+
+header nav ul li a p {
+    text-align: center;
+    font-size: 30px;
+}
+
+@media (max-width: 426px) {
+
+    header h1 span.span1 {
+        position: relative;
+        font-size: 25px;
+        top: -16px;
+    }
+
+    header h1 span.span2 {
+        position: relative;
+        font-size: 25px;
+        top: 10px;
+        left: -130px;
+    }
+
+    header nav {
+        width: 100%;
+        right: calc(-100% - 4px);
+    }
+
+}

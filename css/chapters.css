@@ -1,0 +1,101 @@
+main div.chaptersGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    width: 835px;
+    background-color: navy;
+    margin: 0 auto;
+    border: solid navy 4px;
+    border-radius: 15px;
+}
+
+main h1 {
+    text-align: center;
+    margin: 30px auto 0;
+    padding: 20px 40px;
+    background-color: navy;
+    width: fit-content;
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+main div.chaptersGrid div {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    background-color: blue;
+    transition: background-color .6s; 
+    border-radius: 10px;
+}
+
+main div.chaptersGrid div:hover {
+    background-color: dodgerblue;
+}
+
+main div.chaptersGrid div a {
+    color: white;
+    text-decoration: none;
+}
+
+main div.chaptersGrid div a p {
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    font-weight: bold;    
+}
+
+@media (max-width: 875px) {
+
+    main div.chaptersGrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 625px;
+    }
+
+}
+
+@media (max-width: 690px) {
+
+    main div.chaptersGrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 415px;
+    }
+
+}
+
+@media (max-width: 440px) {
+
+    main h1 {
+        padding: 10px 20px;
+    }
+
+    main div.chaptersGrid {
+        width: 335px;
+    }
+
+    main div.chaptersGrid div {
+        height: 80px;
+        width: 80px;
+    }
+
+    main div.chaptersGrid div a p {
+        line-height: 80px;
+    }
+
+}
+
+@media (max-width: 365px) {
+
+    main div.chaptersGrid {
+        width: 300px;
+    }
+
+    main div.chaptersGrid div {
+        width: 70px;
+        height: 70px;
+    }
+
+    main div.chaptersGrid div a p {
+        line-height: 70px;
+    }
+
+}

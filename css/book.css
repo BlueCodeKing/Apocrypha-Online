@@ -1,0 +1,52 @@
+main div.menu {
+    margin-top: 30px;
+}
+
+main div.menu div {
+    width: 800px;
+    background-color: blue;
+    margin: 15px auto;
+    border: solid navy 5px;
+    border-radius: 20px;
+    transition: .6s;
+}
+
+main div.menu div:hover {
+    background-color: dodgerblue;
+}
+
+main div.menu div a {
+    color: white;
+    text-decoration: none;
+}
+
+main div.menu div a p {
+    font-size: 40px;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+
+    main div.menu div {
+        width: 90vw;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    main div.menu div {
+        width: 85vw;
+    }
+
+}
+
+@media (max-width: 376px) {
+
+    main div.menu div a p {
+        font-size: 30px;
+    }
+
+}
