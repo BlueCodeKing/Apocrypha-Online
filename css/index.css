@@ -2,7 +2,7 @@ main div.bookShelf {
     width: 800px;
     background-color: navy;
     margin: 30px auto;
-    border: solid navy 5px;
+    border: solid navy 4px;
     border-radius: 20px;
 }
 

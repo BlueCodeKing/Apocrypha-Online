@@ -1,0 +1,71 @@
+main div.language {
+    width: 808px;
+    margin: 30px auto;
+}
+
+main div.language div {
+    border: solid 4px navy;
+    box-sizing: border-box;
+}
+
+main div.language div:first-child {
+    border-radius: 20px 20px 0 0;
+    border-bottom: none;
+}
+
+main div.language div:last-child {
+    border-radius: 0 0 20px 20px;
+}
+
+main div.language div h1 {
+    color: white;
+    text-align: center;
+    background-color: navy;
+    padding: 15px 0;
+}
+
+main div.language div a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+main div.language div a p {
+    background-color: blue;
+    padding: 15px 10px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: background-color .6s;
+}
+
+main div.language div a p:hover {
+    background-color: dodgerblue;
+}
+
+@media (max-width: 850px) {
+
+    main div.language {
+        width: 90%;
+    }
+
+    main div.language div {
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 725px) {
+
+    main div.language div a p {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    main div.language div a p {
+        font-size: 18px;
+    }
+
+}
