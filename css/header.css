@@ -106,17 +106,17 @@ header nav ul li {
     margin: 15px;
 }
 
-header nav ul li a {
+header nav ul li p a {
     color: white;
     transition: color .6s;
 }
 
-header nav ul li a:hover {
+header nav ul li p a:hover {
     color: dodgerblue;
     width: fit-content;
 }
 
-header nav ul li a p {
+header nav ul li p {
     text-align: center;
     font-size: 30px;
 }
