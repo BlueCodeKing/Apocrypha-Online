@@ -50,3 +50,15 @@ main div.menu div a p {
     }
 
 }
+
+@media (min-width: 1440px) {
+
+    main div.menu div {
+        width: 70%;
+    }
+
+    main div.menu div a p {
+        font-size: 3em;
+    }
+
+}

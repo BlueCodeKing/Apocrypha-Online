@@ -55,3 +55,33 @@ main div.bookShelf div:hover a p {
     }
 
 }
+
+/* LARGE SCREENS */
+
+@media (min-width: 1440px) {
+
+    main div.bookShelf {
+        width: 70%;
+    }
+
+    main div.bookShelf h1 {
+        font-size: 3.5em;
+    }
+
+    main div.bookShelf div a p {
+        font-size: 1.2em;
+    }
+
+}
+
+@media (min-width: 2000px) {
+
+    main div.bookShelf h1 {
+        font-size: 4em;
+    }
+
+    main div.bookShelf div a p {
+        font-size: 1.7em;
+    }
+
+}
