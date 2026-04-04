@@ -205,3 +205,47 @@ main span.words {
     }
 
 }
+
+/* LARGE SCREENS */
+
+@media (min-width: 1850px) {
+
+    main div.chapterPage {
+        width: 1200px;
+    }
+
+    main div.chapterPage p {
+        font-size: 38px;
+    }
+
+    main div.commentary {
+        width: 1200px;
+    }
+
+    main div.bottomMenu div:first-child {
+        height: 180px;
+        width: 100px;
+
+    }
+
+    main div.bottomMenu div a p {
+        height: 180px;
+        width: 100px;
+        line-height: 180px;
+        text-align: center;
+        font-size: 100px;
+    }
+
+}
+
+@media (min-width: 2500px) {
+
+    main div.bottomMenu div:first-child {
+        left: 500px;
+    }
+
+    main div.bottomMenu div:last-child {
+        right: 500px;
+    }
+
+}

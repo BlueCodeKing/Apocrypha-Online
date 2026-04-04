@@ -4,7 +4,7 @@ main div.chaptersGrid {
     gap: 5px;
     width: 835px;
     background-color: navy;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     border: solid navy 4px;
     border-radius: 15px;
 }
@@ -96,6 +96,33 @@ main div.chaptersGrid div a p {
 
     main div.chaptersGrid div a p {
         line-height: 70px;
+    }
+
+}
+
+/* LARGE SCREENS */
+
+@media (min-width: 1440px) {
+
+    main h1 {
+        font-size: 55px;
+        margin-top: 60px;
+    }
+
+    main div.chaptersGrid {
+        width: 1270px;
+        gap: 10px;
+        margin-bottom: 60px;
+    }
+
+    main div.chaptersGrid div {
+        width: 150px;
+        height: 150px;
+    }
+
+    main div.chaptersGrid div a p {
+        line-height: 150px;
+        font-size: 50px;
     }
 
 }
