@@ -1,0 +1,117 @@
+div.gridMenu {
+    width: 836px;
+    margin: 30px auto 4px;
+}
+
+div.gridMenu h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    background-color: navy;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+}
+
+div.gridMenuButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 4px;
+}
+
+div.gridMenuButtons h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    border: solid 4px navy;
+    border-radius: 10px;
+}
+
+div.gridMenuButtons h3 a {
+    color: white;
+    text-decoration: none;
+    line-height: 92px;
+}
+
+@media (max-width: 915px) {
+
+    div.gridMenu {
+        width: 625px;
+    }
+
+    div.gridMenuButtons {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+}
+
+@media (max-width: 676px) {
+
+    div.gridMenu {
+        width: 520px;
+    }
+
+    div.gridMenuButtons {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    div.gridMenu {
+        width: 420px;
+    }
+
+    div.gridMenuButtons {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+@media (max-width: 456px) {
+
+    div.gridMenu {
+        width: 332px;
+    }
+
+    div.gridMenu h2 {
+        font-size: 30px;
+    }
+
+    div.gridMenuButtons h3 {
+        font-size: 24px;
+        width: 80px;
+        height: 80px;
+    }
+
+    div.gridMenuButtons h3 a {
+        line-height: 72px;
+    }
+
+}
+
+@media (max-width: 376px) {
+
+    div.gridMenu {
+        width: 300px;
+    }
+
+    div.gridMenuButtons h3 {
+        font-size: 24px;
+        width: 70px;
+        height: 70px;
+    }
+
+    div.gridMenuButtons h3 a {
+        line-height: 62px;
+    }
+
+}

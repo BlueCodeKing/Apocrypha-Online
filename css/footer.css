@@ -1,0 +1,10 @@
+footer hr {
+    margin: 0 20px;
+}
+
+p#bottom {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    margin: 20px;
+}

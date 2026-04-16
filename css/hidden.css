@@ -1,0 +1,29 @@
+/* Questions */
+
+div.nav-content ul.links li:nth-child(2) {
+    display: none;
+}
+
+/* Lexicon */
+
+div.nav-content ul.links li:nth-child(3) {
+    display: none;
+}
+
+/* New Features */
+
+div.nav-content ul.links li:nth-child(4) {
+    display: none;
+}
+
+/* Contact */
+
+div.nav-content ul.links li:nth-child(5) {
+    display: none;
+}
+
+/* Help */
+
+div.nav-content ul.links li:nth-child(6) {
+    display: none;
+}

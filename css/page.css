@@ -1,0 +1,160 @@
+div.page {
+    border-radius: 10px;
+    border: solid 4px navy;
+    width: 900px;
+    margin: 30px auto 30px;
+    background-color: blue;
+}
+
+div.page h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    background-color: navy;
+    width: 100%;
+    padding: 10px 10px 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+div.page p.headerInfo {
+    text-align: center;
+    background-color: navy;
+    padding: 5px 0 15px;
+}
+
+div.page p.headerInfo a {
+    color: white;
+    text-decoration: none;
+}
+
+div.page p {
+    font-size: 22px;
+    color: white;
+    padding: 15px 15px 0;
+}
+
+div.page p:last-child {
+    padding-bottom: 15px;
+}
+
+@media (max-width: 930px) {
+
+    div.page {
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    div.page h2 {
+        font-size: 30px;
+    }
+
+    div.page p {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    div.page h2 {
+        font-size: 25px;
+    }
+
+    div.page p {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 376px) {
+
+    div.page h2 {
+        font-size: 20px;
+    }
+
+    div.page p.headerInfo {
+        font-size: 14px;
+    }
+
+    div.page p {
+        font-size: 18px;
+    }
+
+}
+
+/* BOTTOM MENU */
+
+div.bottomMenu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 900px;
+    margin: 30px auto;
+    gap: 10px;
+
+}
+
+div.bottomMenu div {
+    background-color: blue;
+    border: solid 4px navy;
+    border-radius: 10px;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 72px;
+}
+
+div.bottomMenu div a {
+    color: white;
+    text-decoration: none;
+}
+
+div.bottomMenu div a p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@media (max-width: 930px) {
+
+    div.bottomMenu {
+        width: 95%;
+    }
+
+    div.bottomMenu div {
+        height: 80px;
+        line-height: 72px;
+    }
+
+    div.bottomMenu div a p {
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width: 426px) {
+
+    div.bottomMenu {
+        grid-template-columns: 1fr;
+    }
+
+    span.hiddenSmall {
+        display: none;
+    }
+
+    div.bottomMenu div {
+        height: 60px;
+        line-height: 52px;
+    }
+
+    div.bottomMenu div a p {
+        font-size: 25px;
+    }
+
+    div.bottomMenu div:last-child {
+        order: -1;
+    }
+
+}

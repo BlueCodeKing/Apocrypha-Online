@@ -1,0 +1,61 @@
+div.blueMenu {
+    border-radius: 10px;
+    border: solid 4px navy;
+    width: 900px;
+    margin: 30px auto 0;
+}
+
+div.blueMenu h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    background-color: navy;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+div.blueMenu h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: blue;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: solid 4px navy;
+}
+
+div.blueMenu a {
+    color: white;
+    text-decoration: none;
+}
+
+div.blueMenu h3:last-child {
+    border-bottom: none;
+}
+
+div.blueMenu a p {
+    padding: 10px;
+}
+
+@media (max-width: 915px) {
+
+    div.blueMenu {
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    div.blueMenu h2 {
+        font-size: 30px;
+    }
+
+    div.blueMenu h3 {
+        font-size: 20px;
+    }
+
+}
