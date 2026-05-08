@@ -1,0 +1,259 @@
+/* Comments in all caps are for finding where something is more easily. Other comments are instructions for other purposes. */
+
+main div.menu {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 98%;
+    gap: 15px;
+    min-height: calc(95vh - 60px);
+    margin: 2.5vh auto;
+    align-items: stretch;
+}
+
+main div.menu div.section {
+    background-color: blue;
+    border: solid 4px navy;
+    border-radius: 10px;
+    font-size: 20px;
+    list-style-type: none;
+    display: flex;
+    align-items: stretch;
+}
+
+/* LEFT SIDE */
+
+main div.menu div#leftSide {
+    align-self: start;
+    height: calc(95vh - 60px);
+    display: flex;
+}
+
+main div.menu div#leftSide ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+main div.menu div#leftSide ul li {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-bottom: solid 4px navy;
+    transition: background-color .4s;
+    padding: 0 15px;
+    flex: 1;
+}
+
+main div.menu div#leftSide ul li:hover, main div.menu div#leftSide ul li.active {
+    background-color: dodgerblue;
+}
+
+main div.menu div#leftSide ul li:last-child {
+    border: none;
+}
+
+main div.menu div#leftSide ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* MIDDLE SECTION */
+
+main div.menu div#middlePart {
+    display: block;
+}
+
+main div.menu div#middlePart p {
+    color: white;
+    padding: 10px 15px;
+    font-size: 30px;
+}
+
+main div.menu div#middlePart p:first-child {
+    padding: 15px 15px 5px;
+}
+
+main div.menu div#middlePart p.desktopText {
+    display: block;
+}
+
+main div.menu div#middlePart p.mobileText {
+    display: none;
+}
+
+/* RIGHT SIDE */
+
+main div.menu div#rightSide {
+    height: fit-content;
+}
+
+main div.menu div#rightSide p {
+    color: white;
+    padding: 10px;
+}
+
+@media (max-width: 1025px) {
+
+    main div.menu {
+        gap: 8px;
+    }
+
+    main div.menu div#middlePart p {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 942px) {
+
+    main div.menu {
+        gap: 5px;
+    }
+
+    main div.menu div#leftSide ul li {
+        font-size: 18px;
+    }
+
+    main div.menu div#middlePart p {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    main div.menu {
+        grid-template-columns: 1fr;
+    }
+
+    main div.menu div#leftSide ul {
+        height: calc(100vh - 150px);
+        margin-top: 75px;
+    }
+
+    main div.menu div#leftSide ul li {
+        font-size: 15px;
+    }
+
+    main div.menu {
+        grid-template-columns: 1fr;
+    }
+
+    main div.menu div#leftSide {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        border-radius: 0;
+        border: none;
+        border-left: solid white 3px;
+        background-color: navy;
+        z-index: 120;
+    }
+
+    main div.menu div#middlePart p.mobileText {
+        display: block;
+    }
+
+    main div.menu div#middlePart p.desktopText {
+        display: none;
+    }
+
+    main div.menu div#rightSide {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        border-radius: 0;
+        border: none;
+        border-left: solid white 3px;
+        background-color: navy;
+        z-index: 130;
+    }
+
+    main div.menu div.section {
+        display: block;
+        transition: .4s;
+    }
+
+    main div.menu div.section div.closeMenu {
+        position: static;
+        float: right;
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+
+    main div.menu div.section div.closeMenu div {
+        width: 38px;
+        height: 5px;
+        border-radius: 2px;
+    }
+
+    main div.menu div.closeMenu div:first-child {
+        background-color: white;
+        transform: rotate(45deg) translateY(11px) translateX(13px);
+    }
+
+    main div.menu div.closeMenu div:last-child {
+        background-color: white;
+        transform: rotate(-45deg) translateY(10px) translateX(-7px);
+    }
+
+    main div.menu div.textContainer {
+        height: calc(100vh - 55px);
+        margin-top: 55px;
+    }
+
+}
+
+/* LARGE SCREENS */
+
+@media (min-width: 1900px) {
+
+    main div.menu div#leftSide ul li {
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 2000px) {
+
+    main div.menu {
+        min-height: calc(95vh - 80px);
+    }
+
+    main div.menu div#leftSide {
+        height: calc(95vh - 80px);
+    }
+
+}
+
+@media (min-width: 2400px) {
+
+    main div.menu div#leftSide ul li {
+        font-size: 35px;
+    }
+
+    main div.menu div#middlePart p {
+        font-size: 35px;
+    }
+
+    main div.menu div#rightSide p {
+        font-size: 28px;
+    }
+
+}

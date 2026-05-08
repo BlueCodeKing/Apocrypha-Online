@@ -1,0 +1,66 @@
+footer {
+    background-color: black;
+    border-top: solid 3px white;
+    padding-top: 20px;
+}
+
+footer div.footerMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer div.footerMenu div.footerColumn p {
+    text-align: center;
+    font-size: 30px;
+}
+
+footer div.footerMenu div.footerColumn p a {
+    color: white;
+    text-decoration: none;
+    transition: color .4s;
+}
+
+footer div.footerMenu div.footerColumn p a:hover, footer div.footerMenu div.footerColumn p a.active {
+    color: dodgerblue;
+}
+
+footer p.copyRight {
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+@media (max-width: 758px) {
+
+    footer div.footerMenu {
+        grid-template-columns: 1fr;
+    }
+
+    footer div.footerMenu div.footerColumn {
+        padding: 15px;
+        border-bottom: solid gray 4px;
+        width: 60%;
+        margin: 0 auto 0;
+    }
+
+    footer div.footerMenu div.footerColumn:last-child {
+        border-bottom: none;
+    }
+
+}
+
+@media (max-width: 426px) {
+
+    footer div.footerMenu div.footerColumn p {
+        font-size: 25px;
+    }
+
+    footer div.footerMenu div.footerColumn a:hover {
+        color: dodgerblue;
+    }
+
+    footer div.footerMenu div.footerColumn {
+        width: 90%;
+    }
+
+}

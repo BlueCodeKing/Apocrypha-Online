@@ -1,0 +1,155 @@
+/* Comments in all caps are for finding where something is more easily. Other comments are instructions for other purposes. */
+
+div.openingGrid {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    width: 95%;
+    margin: 30px auto 0;
+    gap: 25px;
+    height: fit-content;
+}
+
+/* LEFT SIDE OF THE GRID */
+
+div.openingGrid div.menu1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: calc(90vh - 60px);
+}
+
+div.openingGrid div.menu1 div {
+    background-color: blue;
+    align-content: center;
+    border: solid navy 4px;
+    border-bottom: none;
+    transition: background-color 0.4s;
+}
+
+div.openingGrid div.menu1 div:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+div.openingGrid div.menu1 div:last-child {
+    border-bottom: solid navy 4px;
+    border-radius: 0 0 10px 10px;
+}
+
+div.openingGrid div.menu1 div:hover {
+    background-color: dodgerblue;
+}
+
+div.openingGrid div.menu1 div a {
+    color: white;
+    text-decoration: none;
+}
+
+div.openingGrid div.menu1 div a p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+div.openingGrid div.menu1 div a p br.sometimesVisible {
+    display: none;
+}
+
+/* RIGHT SIDE OF THE GRID */
+
+div.menu2 {
+    display: flex;
+    flex-direction: column;
+    height: calc(90vh - 60px);
+}
+
+div.text {
+  flex: 0 0 auto; /* Grows based on text size only */
+  padding: 5px;
+}
+
+div.text p {
+    color: white;
+    font-size: 24px;
+}
+
+div.text hr {
+    margin: 15px 0;
+}
+
+div.gridSection {
+    flex: 1; /* Fills all remaining space */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 0 5px;
+}
+
+div.gridSection div.gridItem {
+    padding: 0 15px;
+    background-color: blue;
+    border-radius: 10px;
+    border: solid 4px navy;
+    display: grid;
+    place-items: center;
+    transition: background-color .4s;
+}
+
+div.gridSection div.gridItem:hover {
+    background-color: dodgerblue;
+}
+
+div.gridSection div.gridItem div.gridContainer {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+div.gridSection div.gridItem div.gridContainer img {
+    width: 110px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+div.gridSection div.gridItem div.gridContainer p {
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 820px) {
+
+    div.gridSection div.gridItem div.gridContainer img {
+        width: 80px
+    }
+
+    div.gridSection div.gridItem div.gridContainer p {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 680px) {
+
+    div.menu2 {
+        display: none;
+    }
+
+    div.openingGrid {
+        grid-template-columns: 1fr;
+    }
+
+    div.menu2 {
+        height: fit-content;
+        order: -1;
+    }
+
+}
+
+@media (max-width: 385px) {
+
+    div.openingGrid div.menu1 div a p {
+        font-size: 20px;
+    }
+
+}

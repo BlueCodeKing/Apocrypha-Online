@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Comments in all caps are for finding where something is more easily. Other comments are instructions for other purposes. -->
+
+<!-- HEAD -->
+
+<head>
+
+    <!-- META TAGS -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn what the Apocrypha is, which books it includes, and how different traditions view it. Clear explanations and summaries.">
+
+    <!-- STYLESHEETS -->
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css"> <!-- Change for each type of page -->
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- ICON -->
+
+    <link rel="icon" href="images/icon.png">
+
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- TITLE -->
+
+    <title>Apocrypha Online</title> <!-- Change this for every page. -->
+
+</head>
+
+<!-- BODY -->
+
+<body>
+    
+    <header>
+
+        <div class="logo">
+            <a href="index.html">Apocrypha Online</a>
+        </div>
+
+        <div class="openMenu" onclick="openMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <nav id="slidingMenu">
+
+            <div class="closeMenu" onclick="closeMenu()">
+                <div></div>
+                <div></div>
+            </div>
+
+            <ul>
+
+                <li class="active"><a href="index.html">Home</a></li>
+
+                <li><a href="Library.html">Library</a></li>
+
+                <li><a href="Q&A.html">Q&A</a></li>
+
+                <li><a href="dictionary.html">Dictionary</a></li>
+
+                <li onclick="openMenu3()"><a href="#">Switch Categories</a></li>
+
+                <li onclick="openMenu2()"><a href="#">Help, I'm Confused</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="menu">
+
+            <div class="section" id="leftSide">
+
+                <div class="closeMenu" onclick="closeMenu3()">
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <ul>
+                    <li class="active"><a href="index.html">Home Page</a></li>
+                    <li><a href="apocrypha NT.html">Apocrypha (New&nbsp;Testament)</a></li>
+                    <li><a href="apocrypha OT.html">Apocrypha (Old&nbsp;Testament)</a></li>
+                    <li><a href="pseudepigrapha.html">Pseudepigrapha</a></li>
+                    <li><a href="gnosticTexts.html">Gnostic Texts</a></li>
+                    <li><a href="earlyChristianTexts.html">Early Christian Texts</a></li>
+                    <li><a href="lateForgeries.html">Late Forgeries</a></li>
+                    <li><a href="lostTexts.html">Lost Texts</a></li>
+                    <li><a href="creedsAndConfessions.html">Creeds and Confessions</a></li>
+                </ul>
+
+            </div>
+
+            <div class="section" id="middlePart">
+
+                <p><b>Welcome to Apocrypha Online!</b></p>
+
+                <p>This is your go-to place for studying the books from outside of the Bible! Books like The Books of Enoch, The Gospel of Thomas, The Deuterocannonical books, and <em>much</em> more!</p>
+
+                <p class="mobileText">Click on the <b>&#9776;</b> in the top-right corner to get started.</p>
+
+                <p class="desktopText">Add something here later</p>
+
+            </div>
+
+            <div class="section" id="rightSide">
+
+                <div class="closeMenu" onclick="closeMenu2()">
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="textContainer">
+                
+                    <p><b>What's this for?</b> This section is for explaining what you can do with each page on this website.</p>
+                
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="footerMenu">
+
+            <div class="footerColumn">
+                <p><a href="new.html">New Content</a></p>
+            </div>
+
+            <div class="footerColumn">
+                <p><a href="contact">Contact Us</a></p>
+            </div>
+
+            <div class="footerColumn">
+                <p><a href="help.html">Help</a></p>
+            </div>
+
+        </div>
+
+        <p class="copyRight">&copy; 2026 Apocrypha Online</p>
+
+    </footer>
+
+    <script src="scripts/openAndClose.js"></script>
+
+</body>
+</html>
