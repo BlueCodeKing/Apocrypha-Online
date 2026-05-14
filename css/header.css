@@ -1,175 +1,188 @@
-/* Comments in all caps are for finding where something is more easily. Other comments are instructions for other purposes. */
-
 header {
-    background-image: linear-gradient(dodgerblue, blue);
     height: 60px;
-    border-bottom: solid white 3px;
+    background-image: linear-gradient(dodgerblue, blue);
+    border-bottom: solid 3px white;
     overflow-y: hidden;
 }
 
 /* LOGO */
 
 header div.logo {
-    line-height: 57px;
     font-size: 30px;
+    line-height: 57px;
+    margin-left: 15px;
     font-weight: bold;
-    margin-left: 16px;
-    display: inline;
-    width: fit-content
+    display: inline-block;
 }
 
 header div.logo a {
     color: white;
     text-decoration: none;
+    transition: color .4s;
 }
 
-/* TOP MENU */
-
-header div.openMenu {
-    display: none;
+header div.logo a:hover {
+    color: navy;
 }
+
+/* NAV MENU */
 
 header nav {
-    width: fit-content;
     float: right;
 }
 
 header nav ul {
-    float: right;
     display: inline-flex;
-    width: fit-content;
-    align-items: center;
-    height: 57px;
-    list-style-type: none;
+    float: right;
+    margin-right: 8px;
+    flex-direction: row;
 }
 
 header nav ul li {
-    float: left;
-    font-weight: bold;
-    margin-right: 12px;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 20px;
-    transition: background-color .6s;
-}
-
-header nav ul li:nth-child(5), header nav ul li:last-child {
-    display: none;
-}
-
-header nav ul li:hover, header ul li.active {
-    background-color: navy;
+    float: right;
+    line-height: 57px;
+    font-size: 22px;
+    margin-right: 8px;
 }
 
 header nav ul li a {
     color: white;
+    padding: 8px;
     text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color .4s;
 }
 
-@media (max-width: 750px) {
+header nav ul li a:hover, header nav ul li a.active {
+    background-color: navy;
+}
+
+/* MENU OPENING */
+
+div.openMenu {
+    width: 33px;
+    height: 28px;
+    display: inline-flex;
+    flex-direction: column;
+    float: right;
+    justify-content: space-between;
+    margin: 15px;
+    display: none;
+}
+
+div.openMenu div {
+    height: 5px;
+    background-color: white;
+    width: 32px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/* MENU CLOSING */
+
+div.closeMenu {
+    width: 35px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    float: right;
+    justify-content: space-between;
+    margin: 13.5px 15px 0;
+}
+
+div.closeMenu div {
+    height: 5px;
+    background-color: white;
+    width: 34px;
+    margin: 0 auto;
+    border-radius: 5px;
+    transform: rotate(45deg);
+    position: relative;
+}
+
+div.closeMenu div:first-child {
+    transform: rotate(-45deg);
+    margin-top: -5px;
+    top: 17px;
+}
+
+div.closeMenu div:nth-child(2) {
+    transform: rotate(45deg);
+    margin-top: -5px;
+    top: -13px;
+}
+
+@media (max-width: 768px) {
+
+    header div.openMenu {
+        display: inline-flex;
+    }
+
+    header div.closeMenu {
+        display: inline-flex;
+    }
 
     header nav {
         position: fixed;
         height: 100vh;
-        background-color: black;
-        width: 300px;
-        right: -300px;
         top: 0;
-        float: none;
+        right: -300px;
+        width: 300px;
+        background-color: black;
         border-left: solid 3px white;
-        z-index: 100;
-        transition: 0.3s;
-    }
-
-    header div.openMenu {
-        display: grid;
-        justify-content: space-between;
-        position: static;
-        grid-template-columns: 1fr;
-        float: right;
-        width: 35px;
-        height: 35px;
-        margin-right: 13px;
-        margin-top: 15px;
-    }
-
-    header div.openMenu div {
-        background-color: white;
-        display: block;
-        height: 5px;
-        border-radius: 2px;
-        width: 33px;
-        margin: 0 auto;
-    }
-
-    header nav div.closeMenu {
-        position: static;
-        float: right;
-        width: 40px;
-        height: 40px;
-        margin-right: 15px;
-        margin-top: 15px;
-    }
-
-    header nav div.closeMenu div {
-        width: 38px;
-        height: 5px;
-        border-radius: 2px;
-    }
-
-    header nav div.closeMenu div:first-child {
-        background-color: white;
-        transform: rotate(45deg) translateY(11px) translateX(13px);
-    }
-
-    header nav div.closeMenu div:last-child {
-        background-color: white;
-        transform: rotate(-45deg) translateY(10px) translateX(-7px);
+        transition: right 0.4s;
     }
 
     header nav ul {
-        display: grid;
-        grid-template-columns: 1fr;
-        height: 80vh;
-        margin-top: 10vh;
-        float: none;
+        flex-direction: column;
+        text-align: center;
         width: 100%;
+        margin-right: 0;
+        height: 80vh;
+        margin-top: calc(10vh - 52px);
+        margin-left: 3px;
+        justify-content: space-around;
     }
 
     header nav ul li {
-        text-align: center;
         margin-right: 0;
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 30px;
     }
 
-    header nav ul li:nth-child(5), header nav ul li:last-child {
-        display: list-item;
+    header nav ul li a {
+        padding: 10px 20px;
+    }
+
+    header nav ul li a:hover, header nav ul li a.active {
+        background-color: blue;
+        padding: 5px 10px;
     }
 
 }
 
 /* LARGE SCREENS */
 
-@media (min-width: 2000px) {
+@media (min-width: 1550px) {
 
     header {
-        height: 80px;
+        height: 90px;
     }
 
     header div.logo {
-        line-height: 77px;
-        font-size: 45px;
-        margin-left: 20px;
-    }
-
-    header nav ul {
-        height: 77px;
+        font-size: 40px;
+        line-height: 87px;
+        margin-left: 25px;
     }
 
     header nav ul li {
         font-size: 28px;
+        margin-right: 15px;
+        line-height: 87px;
+    }
+
+    header nav ul li a {
+        border-radius: 10px;
     }
 
 }

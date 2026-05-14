@@ -1,0 +1,235 @@
+main div.title {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    background-color: navy;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 1000px;
+}
+
+main div.title h1 {
+    font-size: 40px;
+}
+
+main div.title p {
+    font-size: 20px;
+}
+
+main div.featuresMenu {
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px 10px 0 0;
+    border: solid 4px navy;
+}
+
+main div.featuresMenu h2 {
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    background-color: navy;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+main div.featuresMenu div {
+    background-color: blue;
+    transition: background-color 0.4s;
+    border-bottom: solid 4px navy;
+}
+
+main div.featuresMenu div:hover {
+    background-color: dodgerblue;
+}
+
+main div.featuresMenu div:last-child {
+    border-bottom: none;
+}
+
+main div.featuresMenu div a {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+main div.featuresMenu div a p {
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+
+main .chaptersMenu {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto 50px;
+    border-left: solid 4px navy;
+}
+
+main .chaptersMenu h2 {
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    background-color: navy;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+main .chaptersMenu div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    transition: background-color 0.4s;
+    aspect-ratio: 1 / 1;
+    border-left: none;
+    border-right: solid 4px navy;
+    border-bottom: solid 4px navy;
+    container-type: inline-size;
+}
+
+main .chaptersMenu div:hover {
+    background-color: dodgerblue;
+}
+
+main .chaptersMenu div:last-child {
+    border-right: solid navy 4px;
+}
+
+main .chaptersMenu div a {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+main .chaptersMenu div a p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35cqw;
+}
+
+@media (max-width: 1200px) {
+
+    main div.title {
+        width: 850px;
+    }
+
+    main div.featuresMenu {
+        width: 850px;
+    }
+    
+    main .chaptersMenu {
+        width: 850px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    main div.title {
+        width: 700px;
+    }
+
+    main div.featuresMenu {
+        width: 700px;
+    }
+    
+    main .chaptersMenu {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 700px;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    main div.title {
+        width: 96%;
+    }
+
+    main div.title h1 {
+        font-size: 35px;
+    }
+
+    main div.title p {
+        font-size: 18px;
+    }
+
+    main div.featuresMenu {
+        width: 96%;
+    }
+    
+    main .chaptersMenu {
+        width: 96%;
+    }
+
+}
+
+@media (max-width: 580px) {
+
+    main .chaptersMenu {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    main .chaptersMenu {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 426px) {
+
+    main div.title h1 {
+        font-size: 30px;
+    }
+
+    main div.title p {
+        font-size: 16px;
+    }
+
+}
+
+/* LARGE SCREENS */
+
+@media (min-width: 1570px) {
+
+    main div.title {
+        width: 1200px;
+    }
+
+    main div.title h1 {
+        font-size: 50px;
+    }
+
+    main div.title p {
+        font-size: 25px;
+    }
+
+    main div.featuresMenu {
+        width: 1200px;
+    }
+
+    main div.featuresMenu h2 {
+        font-size: 40px;
+    }
+
+    main div.featuresMenu div a p {
+        font-size: 40px;
+    }
+
+    main .chaptersMenu {
+        width: 1200px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+}

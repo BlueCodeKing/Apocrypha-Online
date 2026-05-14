@@ -1,66 +1,78 @@
 footer {
     background-color: black;
     border-top: solid 3px white;
-    padding-top: 20px;
 }
 
-footer div.footerMenu {
+footer div.bottomMenu {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-footer div.footerMenu div.footerColumn p {
+footer div.bottomMenu div {
     text-align: center;
-    font-size: 30px;
+    padding: 15px;
 }
 
-footer div.footerMenu div.footerColumn p a {
+footer div.bottomMenu div a {
     color: white;
     text-decoration: none;
-    transition: color .4s;
+    transition: color 0.3s;
 }
 
-footer div.footerMenu div.footerColumn p a:hover, footer div.footerMenu div.footerColumn p a.active {
+footer div.bottomMenu div a:hover, footer div.bottomMenu div a.active {
     color: dodgerblue;
 }
 
-footer p.copyRight {
-    color: white;
-    text-align: center;
-    margin: 20px;
+footer div.bottomMenu div a p {
+    font-size: 30px;
 }
 
-@media (max-width: 758px) {
+footer p.copyright {
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
 
-    footer div.footerMenu {
+@media (max-width: 760px) {
+
+    footer div.bottomMenu {
         grid-template-columns: 1fr;
-    }
-
-    footer div.footerMenu div.footerColumn {
-        padding: 15px;
-        border-bottom: solid gray 4px;
+        margin-top: 10px;
         width: 60%;
-        margin: 0 auto 0;
+        margin: 30px auto 0;
     }
 
-    footer div.footerMenu div.footerColumn:last-child {
+    footer div.bottomMenu div {
+        padding: 10px 0;
+        border-bottom: solid 3px gray;
+    }
+
+    footer div.bottomMenu div:last-child {
         border-bottom: none;
     }
 
 }
 
-@media (max-width: 426px) {
+@media (max-width: 500px) {
 
-    footer div.footerMenu div.footerColumn p {
-        font-size: 25px;
+    footer div.bottomMenu {
+        width: 80%;
     }
 
-    footer div.footerMenu div.footerColumn a:hover {
-        color: dodgerblue;
+}
+
+@media (min-width: 1550px) {
+
+    footer div.bottomMenu {
+        margin-top: 30px;
     }
 
-    footer div.footerMenu div.footerColumn {
-        width: 90%;
+    footer div.bottomMenu div a p {
+        font-size: 40px;
+    }
+
+    footer p.copyright {
+        font-size: 20px;
     }
 
 }
