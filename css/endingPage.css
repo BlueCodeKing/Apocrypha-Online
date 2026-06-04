@@ -1,0 +1,117 @@
+main div.congratulations {
+    background-color: blue;
+    width: 60vw;
+    margin: 30px auto;
+    border-radius: 15px;
+    border: solid navy 4px;
+}
+
+main div.congratulations p {
+    color: white;
+    font-size: 25px;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+main div.congratulations p:first-child {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+main div.congratulations p:last-child {
+    font-size: 30px;
+}
+
+main div.endingMenu {
+    background-color: blue;
+    width: 60vw;
+    z-index: 40;
+    transition: background-color .4s;
+    border-radius: 15px;
+    border: solid navy 4px;
+    margin: 10px auto;
+}
+
+main div.endingMenu div {
+    transition: background-color .4s;
+}
+
+main div.endingMenu div a {
+    color: white;
+    text-decoration: none;
+}
+
+main div.endingMenu div a p {
+    font-size: 35px;
+    padding: 15px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: solid navy 4px;
+    font-weight: bold;
+}
+
+main div.endingMenu div:hover {
+    background-color: dodgerblue;
+}
+
+main div.endingMenu div.navy {
+    background-color: navy;
+}
+
+main div.endingMenu div.navy p {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+@media (max-width: 900px) {
+
+    main div.congratulations {
+        width: 90vw;
+    }
+
+    main div.endingMenu {
+        width: 90vw;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    main div.endingMenu div.navy p {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    main div.endingMenu div a p {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    main div.congratulations p:first-child {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    main div.congratulations p:last-child {
+        font-size: 25px;
+        padding: 0 10px 10px;
+    }
+
+    main div.endingMenu div.navy p {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    main div.endingMenu div a p {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+}

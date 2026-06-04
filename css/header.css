@@ -1,0 +1,67 @@
+header {
+    background-image: linear-gradient(dodgerblue, blue);
+    height: 65px;
+    border-bottom: 3px solid white;
+    overflow-y: hidden;
+}
+
+header div.headerTitle {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 62px;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+header div.headerTitle a {
+    color: white;
+    text-decoration: none;
+}
+
+header div.options {
+    float: right;
+    margin: 8.5px 10px;
+    height: fit-content;
+}
+
+header div.options div {
+    cursor: pointer;
+    border: solid 2px white;
+    border-radius: 8px;
+    float: right;
+    z-index: 100;
+}
+
+header div.options div p {
+    color: white;
+    background-color: navy;
+    height: 45px;
+    width: 45px;
+    border-radius: 8px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header div.options div p:last-child {
+    display: none;
+}
+
+@media (max-width: 426px) {
+
+    .span1 {
+        font-size: 25px;
+        position: absolute;
+        top: -10px;
+        left: 10px;
+    }
+
+    .span2 {
+        font-size: 25px;
+        position: absolute;
+        top: 15px;
+        left: 9px;
+    }
+
+}

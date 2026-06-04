@@ -1,0 +1,134 @@
+main div.chapterText {
+    width: 60vw;
+    margin: 30px auto;
+    border-radius: 15px;
+    background-color: blue;
+    border: solid navy 4px;
+}
+
+main div.chapterText p {
+    color: white;
+    font-size: 25px;
+    padding: 15px 20px;
+}
+
+main div.chapterText p.titleRow {
+    color: white;
+    font-size: 40px;
+    background-color: navy;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+main div.bottomMenu div {
+    background-color: blue;
+    width: fit-content;
+    height: 120px;
+    position: fixed;
+    z-index: 40;
+    transition: background-color .4s;
+}
+
+main div.bottomMenu div:hover {
+    background-color: dodgerblue;
+}
+
+main div.bottomMenu div:first-child {
+    left: calc(10vw - 41px);
+    top: calc(50vh - 60px);
+    border-radius: 15px;
+    border: solid navy 4px;
+}
+
+main div.bottomMenu div:last-child {
+    right: calc(10vw - 41px);
+    top: calc(50vh - 60px);
+    border-radius: 15px;
+    border: solid navy 4px;
+}
+
+main div.bottomMenu div a {
+    color: white;
+    text-decoration: none;
+}
+
+main div.bottomMenu div a p {
+    font-size: 65px;
+    padding: 20px;
+    line-height: 80px;
+}
+
+main div.bottomMenu div a p span.minWidth1025 {
+    display: none;
+}
+
+@media (max-width: 1025px) {
+
+    main div.chapterText {
+        width: 94vw;
+    }
+
+    main div.bottomMenu {
+        height: fit-content;
+        position: static;
+        z-index: 40;
+        width: 94vw;
+        display: grid;
+        margin: 0 auto 30px;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    main div.bottomMenu div {
+        height: auto;
+        position: static;
+        z-index: 40;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        font-weight: 600;
+        transition: background-color .4s;
+    }
+
+    main div.bottomMenu div a p {
+        padding: 40px auto;
+    }
+
+    main div.bottomMenu div a p span.minWidth1025 {
+        display: initial;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    main div.chapterText p.titleRow {
+        font-size: 30px;
+    }
+
+    main div.bottomMenu div {
+        height: 80px;
+        overflow-y: hidden;
+    }
+
+    main div.bottomMenu div a p {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    main div.chapterText {
+        margin-bottom: 10px;
+    }
+
+    main div.bottomMenu {
+        gap: 5px;
+    }
+
+}

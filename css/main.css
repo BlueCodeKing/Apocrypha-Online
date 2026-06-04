@@ -1,0 +1,33 @@
+main {
+    min-height: calc(100vh - 65px);
+}
+
+main div#help {
+    position: fixed;
+    height: calc(90vh - 65px);
+    width: 90%;
+    top: calc(65px + 5vh);
+    left: -100%;
+    border: solid 5px white;
+    border-radius: 15px;
+    background-color: blue;
+    transition: left .8s;
+    box-sizing: border-box;
+    z-index: 50;
+}
+
+main div#help p {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 15px;
+}
+
+@media (max-width: 425px) {
+
+    main div#help p {
+        font-size: 20px;
+    }
+
+
+}
