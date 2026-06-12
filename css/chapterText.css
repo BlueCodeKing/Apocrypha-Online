@@ -1,3 +1,36 @@
+div.bookInfo {
+    width: 60vw;
+    margin: 30px auto 0;
+    text-align: center;
+    border-radius: 15px;
+    background-color: navy;
+    border: solid navy 4px;
+}
+
+div.bookInfo p.bookName {
+    color: white;
+    font-size: 35px;
+    padding: 15px 20px 0;
+    font-weight: bold;
+}
+
+div.bookInfo p.translationName {
+    color: white;
+    font-size: 20px;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+div.bookInfo a {
+    color: white;
+    text-decoration: none;
+    transition: .4s;
+}
+
+div.bookInfo a:hover {
+    color: dodgerblue;
+}
+
 main div.chapterText {
     width: 60vw;
     margin: 30px auto;
@@ -14,12 +47,25 @@ main div.chapterText p {
 
 main div.chapterText p.titleRow {
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     background-color: navy;
     text-align: center;
     width: 100%;
     padding: 10px 0;
     font-weight: bold;
+}
+
+main div.chapterText a.arrow {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    display: none;
+    transition: .4s;
+}
+
+main div.chapterText a.arrow:hover {
+    color: dodgerblue;
 }
 
 main div.bottomMenu div {
@@ -66,8 +112,16 @@ main div.bottomMenu div a p span.minWidth1025 {
 
 @media (max-width: 1025px) {
 
+    main div.bookInfo {
+        width: 94vw;
+    }
+
     main div.chapterText {
         width: 94vw;
+    }
+
+    main div.chapterText a.arrow {
+        display: inline;
     }
 
     main div.bottomMenu {
@@ -123,12 +177,36 @@ main div.bottomMenu div a p span.minWidth1025 {
 
 @media (max-width: 425px) {
 
+    main div.bookInfo p.bookName {
+        font-size: 30px;
+    }
+
+    main div.bookInfo p.translationName {
+        font-size: 15px;
+    }
+
     main div.chapterText {
         margin-bottom: 10px;
     }
 
     main div.bottomMenu {
         gap: 5px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    main div.bookInfo p.bookName {
+        font-size: 25px;
+    }
+
+    main div.bookInfo p.translationName {
+        font-size: 13.5px;
+    }
+
+    main div.chapterText p.titleRow {
+        font-size: 23px;
     }
 
 }

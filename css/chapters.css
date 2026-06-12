@@ -1,0 +1,220 @@
+div.bookInfo {
+    width: 1000px;
+    margin: 30px auto 0;
+    text-align: center;
+    border-radius: 15px;
+    background-color: navy;
+    border: solid navy 4px;
+    box-sizing: border-box;
+}
+
+div.bookInfo p.bookName {
+    color: white;
+    font-size: 35px;
+    padding: 15px 20px 0;
+    font-weight: bold;
+}
+
+div.bookInfo p.translationName {
+    color: white;
+    font-size: 20px;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+div.bookInfo a {
+    color: white;
+    text-decoration: none;
+    transition: .4s;
+}
+
+div.bookInfo a:hover {
+    color: dodgerblue;
+}
+
+div.chaptersMenu {
+    width: 1000px;
+    margin: 30px auto;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+div.chaptersMenu div {
+    border: solid navy 4px;
+    box-sizing: border-box;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+div.chaptersMenu div:hover {
+    background-color: dodgerblue;
+}
+
+div.chaptersMenu div a {
+    text-decoration: none;
+}
+
+div.chaptersMenu div a p {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    height: 110px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1040px) {
+
+    div.bookInfo {
+        width: 900px;
+    }
+
+    div.chaptersMenu {
+        width: 900px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 925px) {
+
+    div.bookInfo {
+        width: 800px;
+    }
+
+    div.chaptersMenu {
+        width: 800px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 820px) {
+
+    div.bookInfo {
+        width: 680px;
+    }
+
+    div.chaptersMenu {
+        width: 680px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    div.chaptersMenu div a p {
+        height: 120px;
+        width: 120px;
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 710px) {
+
+    div.bookInfo {
+        width: 550px;
+    }
+
+    div.chaptersMenu {
+        width: 550px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    div.chaptersMenu div a p {
+        height: 120px;
+        width: 120px;
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 615px) {
+
+    div.bookInfo {
+        width: 550px;
+    }
+
+    div.chaptersMenu {
+        width: 550px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    div.chaptersMenu div a p {
+        height: 120px;
+        width: 120px;
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 570px) {
+
+    div.bookInfo {
+        width: 400px;
+    }
+
+    div.chaptersMenu {
+        width: 400px;
+    }
+
+    div.chaptersMenu div a p {
+        font-size: 35px;
+        height: 90px;
+        width: 60px;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    div.bookInfo {
+        width: 96vw;
+    }
+
+    div.chaptersMenu {
+        width: 96vw;
+    }
+
+    div.chaptersMenu div a p {
+        font-size: 30px;
+        height: 90px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    div.chaptersMenu div a p {
+        font-size: 30px;
+        height: 85px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    div.chaptersMenu  {
+        
+        margin-top: 15px;
+    }
+
+    div.chaptersMenu div a p {
+        font-size: 25px;
+        height: 80px;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    div.chaptersMenu div a p {
+        height: 70px;
+    }
+
+}
