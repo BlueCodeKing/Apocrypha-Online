@@ -199,8 +199,7 @@ div.chaptersMenu div a p {
 
 @media (max-width: 375px) {
 
-    div.chaptersMenu  {
-        
+    div.chaptersMenu {
         margin-top: 15px;
     }
 
