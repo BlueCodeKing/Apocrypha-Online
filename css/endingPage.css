@@ -29,7 +29,7 @@ main div.endingMenu {
     transition: background-color .4s;
     border-radius: 15px;
     border: solid navy 4px;
-    margin: 10px auto;
+    margin: 10px auto 30px;
 }
 
 main div.endingMenu div {
@@ -64,6 +64,10 @@ main div.endingMenu div.navy p {
     color: white;
     text-align: center;
     padding: 15px 20px;
+}
+
+main div.endingMenu div:last-child a p {
+    border-bottom: none;
 }
 
 @media (max-width: 900px) {
