@@ -68,6 +68,12 @@ main div.chapterText a.arrow:hover {
     color: dodgerblue;
 }
 
+main div.chapterText p.title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
 main div.bottomMenu div {
     background-color: blue;
     width: fit-content;
